@@ -5,13 +5,13 @@ import "firebase/functions"
 
 import 'firebase/auth'
 
-const app =  firebase.initializeApp({
-  apiKey: "AIzaSyDrH9of4ehN1Y9y5kBoZMBhf8NDcI8aj5U",
-  authDomain: "auth-dev-1ed67.firebaseapp.com",
-  projectId: "auth-dev-1ed67",
-  storageBucket: "auth-dev-1ed67.appspot.com",
-  messagingSenderId: "551085605839",
-  appId: "1:551085605839:web:bbc59c4f1b3e411594c8ba"
+const app =  firebase.initializeApp( {
+  apiKey: "AIzaSyD9l-44LUqQpo6TpFe1Xu7Zl9wELuWO29M",
+  authDomain: "auth-todo-83419.firebaseapp.com",
+  projectId: "auth-todo-83419",
+  storageBucket: "auth-todo-83419.appspot.com",
+  messagingSenderId: "460624262281",
+  appId: "1:460624262281:web:541520ef36ad3ade390258"
 })
 
 export const auth = app.auth()

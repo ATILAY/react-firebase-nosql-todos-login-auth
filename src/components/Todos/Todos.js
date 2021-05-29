@@ -4,7 +4,7 @@ import firebase,{auth, firestore, functions } from "../../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 const addTodo = functions.httpsCallable("addTodo");
-
+console.log(functions.httpsCallable("addTodo"))
 const Todos = () => {
   const [todo, setTodo] = useState("");
 

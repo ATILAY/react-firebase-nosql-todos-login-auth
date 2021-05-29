@@ -43,3 +43,6 @@ function App() {
 export default App
 //pdstdoxxsnkdsmfvhl@kiabws.com
 //qweqwe
+//firebase deploy --only firestore:rules // auth-todo-83419
+//i can check on https://console.firebase.google.com/project/auth-dev-1ed67/firestore/rules?consoleUI=FIREBASE
+//on firestore database section from left
