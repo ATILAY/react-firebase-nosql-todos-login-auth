@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Card, Button, Alert } from "react-bootstrap"
-import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
+import { useAuth } from "../../contexts/AuthContext"
 
 export default function Dashboard() {
   const [error, setError] = useState("")
@@ -28,6 +28,9 @@ export default function Dashboard() {
           <strong>Email:</strong> {currentUser.email}
           <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
             Update Profile
+          </Link>
+          <Link to="/todos" className="btn btn-primary w-100 mt-3">
+            Go To Todo List
           </Link>
         </Card.Body>
       </Card>

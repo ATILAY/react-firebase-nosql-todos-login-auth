@@ -1,25 +1,28 @@
 import "./Todos.css";
-import { useState } from "react";
-import firebase, { auth, firestore, functions } from "./firebase";
+import React, { useState } from "react";
+import firebase,{auth, firestore, functions } from "../../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 const addTodo = functions.httpsCallable("addTodo");
 
 const Todos = () => {
   const [todo, setTodo] = useState("");
+
   const todosRef = firestore.collection(`users/${auth.currentUser.uid}/todos`);
+
+  //subscribe a query and changes any time that updated
   const [todos] = useCollectionData(todosRef, { idField: "id" });
 
   const signOut = () => auth.signOut();
 
   const onSubmitTodo = (event) => {
     event.preventDefault();
-
+    console.log('firebase', firebase)
     setTodo("");
     addTodo({
       text: todo,
       complete: false,
-      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      createdAt: firebase.firebase_.firestore.FieldValue.serverTimestamp(),
     });
   };
 
