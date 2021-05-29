@@ -1,0 +1,81 @@
+[debug] [2021-05-29T19:59:31.237Z] ----------------------------------------------------------------------
+[debug] [2021-05-29T19:59:31.239Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\atilay\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-29T19:59:31.239Z] CLI Version:   9.12.0
+[debug] [2021-05-29T19:59:31.239Z] Platform:      win32
+[debug] [2021-05-29T19:59:31.239Z] Node Version:  v12.16.1
+[debug] [2021-05-29T19:59:31.240Z] Time:          Sat May 29 2021 22:59:31 GMT+0300 (GMT+03:00)
+[debug] [2021-05-29T19:59:31.240Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-29T19:59:31.246Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-29T19:59:31.246Z] > authorizing via signed-in user (atilaymayadag@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  Z:\projects\react-auth-firebase-routing\react-auth-firebase-routing
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-05-29T19:59:39.643Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-1ed67 [none]
+[debug] [2021-05-29T19:59:40.039Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-1ed67 200
+[debug] [2021-05-29T19:59:40.039Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-1ed67 {"projectId":"auth-dev-1ed67","projectNumber":"551085605839","displayName":"Auth-Dev","name":"projects/auth-dev-1ed67","resources":{"hostingSite":"auth-dev-1ed67","realtimeDatabaseInstance":"auth-dev-1ed67-default-rtdb","storageBucket":"auth-dev-1ed67.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] i  Using project auth-dev-1ed67 (Auth-Dev) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-05-29T19:59:40.113Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-29T19:59:40.114Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-29T19:59:40.462Z] <<< HTTP RESPONSE 200 {"date":"Sat, 29 May 2021 19:59:40 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-29T19:59:40.470Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/auth-dev-1ed67/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-05-29T19:59:41.685Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 29 May 2021 19:59:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-05-29T19:59:41.687Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/auth-dev-1ed67/locations/-/instances/auth-dev-1ed67-default-rtdb  
+ 
+[debug] [2021-05-29T19:59:42.237Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 29 May 2021 19:59:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-05-29T19:59:52.500Z] >>> HTTP REQUEST GET https://auth-dev-1ed67-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-05-29T19:59:52.956Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 29 May 2021 19:59:52 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for auth-dev-1ed67-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-05-29T19:59:52.962Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/auth-dev-1ed67/services/firestore.googleapis.com  
+ 
+[debug] [2021-05-29T19:59:54.144Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 29 May 2021 19:59:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-29T19:59:54.144Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/auth-dev-1ed67  
+ 
+[debug] [2021-05-29T19:59:54.644Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 29 May 2021 19:59:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-29T19:59:54.644Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-05-29T19:59:54.645Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-29T19:59:54.645Z] > authorizing via signed-in user (atilaymayadag@gmail.com)
+[debug] [2021-05-29T19:59:54.645Z] [iam] checking project auth-dev-1ed67 for permissions ["firebase.projects.get"]
+[debug] [2021-05-29T19:59:54.645Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-dev-1ed67:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-05-29T19:59:55.586Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 29 May 2021 19:59:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=752","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
